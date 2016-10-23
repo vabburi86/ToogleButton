@@ -12,7 +12,7 @@ Ext.ns('Ext.ux.form');
  */
 Ext.ux.form.ToggleButton = Ext.extend(Ext.form.Field,  {
   
-  options : {no: "common.label.no", yes:"common.label.yes" },
+  options : {no: "No", yes:"Yes" },
   
   defaultValue : 'no',
   
@@ -48,7 +48,7 @@ Ext.ux.form.ToggleButton = Ext.extend(Ext.form.Field,  {
     for(var property in this.options){
       option = this.options[property];
       items.push({
-        boxLabel    : _t(option),
+        boxLabel    : option,
         inputValue  : property,
         checked     : this.defaultValue === property
       });
