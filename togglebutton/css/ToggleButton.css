@@ -1,0 +1,53 @@
+@CHARSET "ISO-8859-1";
+.ux-togglebutton {
+    background-color:#FFFFFF;
+    font-family: "Lucida Grande",Arial,Verdana,sans-serif;font-size:11px; font-weight:bold;
+}
+
+.ux-togglebutton ul{
+    list-style:none;
+    width:85px;
+    height:21px;
+    position:absolute;
+}
+
+.ux-togglebutton ul li{
+    float:left;
+    line-height:19px;
+    padding:2px 4px 0; 
+    
+    background: white;
+    border-left:1px solid #5DADE2  ;
+    border-top:1px solid #5DADE2  ;
+    border-bottom:1px solid #5DADE2  ;
+    -webkit-box-shadow:0 0.4px 0 #FFF inset, 0 0 0.4px rgba(0, 0, 0, 0.2) inset, 0 0.4px 0.4px rgba(0, 0, 0, .3);
+}
+
+.ux-togglebutton ul li:first-child{
+    -webkit-border-radius:3px 0 0 3px;
+}
+.ux-togglebutton ul li:last-child{
+    -webkit-border-radius:0 3px 3px 0;
+}
+
+.ux-togglebutton ul li a{
+    text-decoration: none;
+    text-transform:uppercase;
+    color: grey;
+}
+
+.ux-togglebutton ul li.on{
+    background: #5DADE2  ;
+    border-right:1px solid #5DADE2  ;
+    border-top:1px solid #5DADE2  ;
+    border-bottom:1px solid #5DADE2  ;
+    -webkit-box-shadow:0 0.4px 0.4px black outset, 0 0.4px 0 white;
+}
+
+.ux-togglebutton ul li:not(.on):active{
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddd), to(#f1f1f1));
+}
+
+.ux-togglebutton ul li.on a{
+    color:white;
+}
